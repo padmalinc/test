@@ -1,0 +1,27 @@
+<html>
+<head>
+	<title>Jsassignment 26</title>
+    <script>
+    var image_tracker='f';
+    function change()
+    {
+     var image=document.getElementById('social');
+     if(image_tracker=='f')
+     {
+      image.src="25img1.jpg";
+      image_tracker='t';
+     }
+     else
+     {
+     	image.src="25img2.png";
+     	image_tracker='f';
+     }
+    }   
+    //setInterval('change()',1000);
+     setTimeout('change()',1000);
+    </script>
+</head>
+<body>
+	<img src="fblogo.jpg" width="500" alt="social logo" id="social" onclick="change();">
+</body>
+</html

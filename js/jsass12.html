@@ -1,0 +1,24 @@
+<html>
+<head>
+	<title>Jsassignment 12</title>
+    <script>
+    document.write("<b>Global</b> <br/> <br/>");
+    var s="apple";//global
+      function printApple()
+      {
+        document.write(s+" " +"inside function <br/><br/>"); 
+      }  
+        printApple();
+        document.write(s+" "+"outside function <br/> <br/> <br/>");
+        document.write("<b>Local</b> <br/> <br/>");
+      	function printApple()
+      {
+      	var s="apple";//local
+        document.write(s+" " +"inside function <br/><br/>"); 
+      }
+      printApple();
+    </script>
+</head>
+<body>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<html>
+<head>
+	<title>Jsassignment 30</title>
+    <script>
+      function check_info()
+      {
+        var name=document.getElementById('name').value;
+        var address=document.getElementById('address').value;
+        var email=document.getElementById('email').value;
+        var mobno=document.getElementById('mobno').value;
+        var pass=document.getElementById('pass').value;
+        var conpass=document.getElementById('conpass').value;
+      }
+        <table width="800" bgcolor="cyan" border="0">
+        <tr bgcolor="white">
+            <th align="left">PERSONAL INFORMATION</th>
+            <th align="right" size="4">All fields are mandatory</th>
+        </tr>
+        </table>
+    </script>
+</head>
+<body>
+    <body bgcolor="#18ffff">
+    <form align="center" action="submit.html" method="post" onsubmit="return check_info();">
+        <h1 align="center">Student Registration Form</h1>
+         Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="name" id="name"/><br/><br/>
+        Personal Address&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="address" id="address"/><br/><br/>
+        EmailId&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="email" id="email"/><br/></br>
+        MobileNo&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="mobno" id="mobno"/><br/></br>
+        Password&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="pass" id="pass"/><br/></br>
+        Confirm Password&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="conpass" id="conpass"/><br/></br>
+        <input type="submit" value="Submit Form">
+</body>
+</html

@@ -1,0 +1,24 @@
+<html>
+<head>
+	<title>Jsassignment 27</title>
+    <script>
+      function write_name(){
+        var welcome_parra=document.getElementById('welcome Rahul Raj. My Email Id is rahul@gmail.com');
+        var fname=document.getElementById('fname');
+        var lname=document.getElementById('lname');
+        var email=document.getElementById('email');
+        var pass=document.getElementById('pass');
+        welcome_parra.innerHTML="welcome Rahul Raj. My Email Id is rahul@gmail.com"+fname.value+lname.value+email.value+pass.value;
+      }
+    </script>
+</head>
+<body>
+	<p id="welcome Rahul Raj. My Email Id is rahul@gmail.com"></p>
+    <form>
+        First Name:<input type="text" id="fname"/><br/><br/>
+        Last Name:<input type="text"  id="lname"/><br/><br/>
+        Email Id:  <input type="text" id="email"/><br/></br>
+        Password:<input type="text" id="pass"/><br/></br>
+        <input type="button" value="SignUp" onclick="write_name();"><br/><br/><br/>
+</body>
+</html

@@ -1,0 +1,30 @@
+<html>
+<head>
+  <title>Jsassignment 32</title>
+    <script>
+      function is_checked()
+      {
+        var male=document.getElementById('gender_male').checked;
+        var female=document.getElementById('gender_female').checked; 
+        if(male==false && female==false)
+        {
+          alert("Please choose your gender");
+          return false; 
+        }
+        else
+        {
+          return true;
+        }
+      }
+    </script>
+</head>
+<body>
+    <body bgcolor="#18ffff">
+    <form action="submit.html" method="get" onsubmit="return is_checked()">
+        <h1>Radio Button Validation</h1>
+         Gender:<input type="radio" name="gender" value="male" id="gender_male"/>Male
+          <input type="radio" name="gender" value="female" id="gender_female">Female 
+          <input type="submit" value="Submit">
+    </form>
+</body>
+</html
